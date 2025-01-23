@@ -1,0 +1,126 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0073e6;
+}
+
+/* Box for content */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+table thead tr {
+    background-color: #1e90ff;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Responsive: para pantallas pequeñas */
+@media (max-width: 600px) {
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
